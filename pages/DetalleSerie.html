@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="series , peliculas , taquilleras , proximos estrenos"
+    />
+    <meta name="description" content="Servicio de streaming" />
+    <meta name="author" content="Grupo 5" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>N E F L I</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark fondoDelNegro">
+        <div class="container">
+          <a href="/index.html"
+            ><img
+              src="../img/N e f l i (1).png"
+              alt="logo2"
+              width="100px"
+              class="me-4"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContenido"
+            aria-controls="navbarContenido"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContenido">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./detallePeliculas.html"
+                      >Peliculas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./DetalleSerie.html"
+                      >Series</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./suscripcion.html">Suscripcion</a>
+              </li>
+            </ul>
+            <button
+              class="btn btn-danger mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modallogin"
+            >
+              Iniciar Sesion
+            </button>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar Peliculas y Series"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-danger" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-black text-danger">
+      <section
+        id="carrusel"
+        class="carousel slide carousel-fade my-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../img/detalleSerie/portada/Peaky-Blinders-Cast-and-Character-Guide.jpeg"
+              class="d-block w-100 banner"
+              alt="peaky blinders"
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/detalleSerie/portada/1366_2000.jpg"
+              class="d-block w-100 banner"
+              alt="breaking bad"
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/detalleSerie/portada/global.png"
+              class="d-block w-100 banner"
+              alt="dark"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carrusel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carrusel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+      <section class="container-fluid">
+        <article class="row">
+          <h3>Nuevos lanzamientos</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalSerieLanzamientos"
+              href="#"
+              ><img
+                src="../img/detalleSerie/lanzamientos/reinaSur.jpg"
+                alt="La reina del sur"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/lanzamientos/office.jpg"
+                alt="The office"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/lanzamientos/miradaindiscreta.jpg"
+                alt="Mirada indiscreta"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/lanzamientos/machosalfa.jpg"
+                alt="Machos alfa"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/lanzamientos/lagloria.jpg"
+                alt="La gloria"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/lanzamientos/madoff.jpg"
+                alt="Madoff"
+                class="w-100"
+            /></a>
+          </aside>
+        </article>
+        <article class="row mt-3">
+          <h3>Series dramáticas aclamadas por la critica</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalSerieAclamada"
+              href="#"
+              ><img
+                src="../img/detalleSerie/dramaticas/breakingbad.jpg"
+                alt="Breaking Bad"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/dramaticas/suits.jpg"
+                alt="La ley de los audaces"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2 my-lg-0">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/dramaticas/peaky.jpg"
+                alt="Peaky Blinders"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2 my-3 my-md-0">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/dramaticas/walking.jpg"
+                alt="The walking dead"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/dramaticas/saul.jpg"
+                alt="Better call saul"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/dramaticas/vikingos.jpg"
+                alt="Vikingos"
+                class="w-100"
+            /></a>
+          </aside>
+        </article>
+        <article class="row mt-3">
+          <h3>Series emocionantes</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalSerieEmocionante"
+              href="#"
+              ><img
+                src="../img/detalleSerie/emocionantes/elnovato.jpg"
+                alt="El novato"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/emocionantes/puntociego2.jpg"
+                alt="Blindspot"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/emocionantes/casapapel.jpg"
+                alt="La casa de papel"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/emocionantes/designated.jpg"
+                alt="Designated survivor"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detalleSerie/emocionantes/stranger.jpg"
+                alt="Stranger Things"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/emocionantes/witcher.jpg"
+                alt="The witcher"
+                class="w-100"
+              />
+            </a>
+          </aside>
+        </article>
+        <article class="row mt-3">
+          <h3>Series sobre crimenes</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalSerieCrimenes"
+              href="#"
+            >
+              <img
+                src="../img/detalleSerie/crimenes/vis.jpg"
+                alt="Vis a vis"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/crimenes/ozark.jpg"
+                alt="ozark"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/crimenes/guardaespaldas.jpg"
+                alt="guardaespaldas"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/crimenes/mindhunter.jpg"
+                alt="Mindhunter"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/crimenes/riverdale.jpg"
+                alt="riverdale"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/crimenes/sinner.jpg"
+                alt="The sinner"
+                class="w-100"
+              />
+            </a>
+          </aside>
+        </article>
+        <article class="row mt-3">
+          <h3>Populares en nefli</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalSeriePopulares"
+              href="#"
+            >
+              <img
+                src="../img/detalleSerie/populares/newAmsterdam.jpg"
+                alt="New Amsterdam"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/populares/skyrojo.jpg"
+                alt="Sky rojo"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/populares/you.jpg"
+                alt="you"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/populares/shooter.jpg"
+                alt="shooter"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/populares/gambito.jpg"
+                alt="Gambito de dama"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/populares/blackmirror.jpg"
+                alt="Black Mirror"
+                class="w-100"
+              />
+            </a>
+          </aside>
+        </article>
+        <article class="row mt-3">
+          <h3>Series de adolescentes</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalSerieAdolescentes"
+              href="#"
+            >
+              <img
+                src="../img/detalleSerie/adolescentes/atypical.jpg"
+                alt="Atypical"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/adolescentes/lupin.jpg"
+                alt="Lupin"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/adolescentes/vivir.jpg"
+                alt="Vivir sin permiso"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/adolescentes/reina.jpg"
+                alt="La reina del flow"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/adolescentes/dark.jpg"
+                alt="Dark"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/adolescentes/calamar.jpg"
+                alt="El juego del calamar"
+                class="w-100"
+              />
+            </a>
+          </aside>
+        </article>
+        <article class="row mt-3">
+          <h3>Solo en nefli</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalSerieSoloNetflix"
+              href="#"
+            >
+              <img
+                src="../img/detalleSerie/soloNetflix/saraa.jpeg"
+                alt="Quien mato a sara?"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/soloNetflix/faudaa.jpg"
+                alt="Fauda"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/soloNetflix/otrayo.jpg"
+                alt="Mi otra yo"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/soloNetflix/cafe.jpg"
+                alt="Cafe con aroma de mujer"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/soloNetflix/canto.jpg"
+                alt="Canto para no llorar"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detalleSerie/soloNetflix/dinastia.jpg"
+                alt="Dinastia"
+                class="w-100"
+              />
+            </a>
+          </aside>
+        </article>
+      </section>
+      <!-- MODAL Lanzamientos-->
+      <section
+        class="modal fade text-dark"
+        id="modalSerieLanzamientos"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">
+                La Reina del Sur
+              </h2>
+              <button
+                type="button"
+                class="btn-close bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detalleSerie/lanzamientos/reina.jpg"
+                alt="reina"
+                class="w-100"
+              />
+              <p>
+                Tras años de sangre, sudor y lágrimas, una mujer de origen
+                humilde se termina convirtiendo en una leyenda del narcotráfio,
+                todo lo que eso signifia...
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 3 temporadas <br />
+                +16 <br />2022
+              </p>
+              <div class="text-center py-2">
+                <a
+                  href="./mantenimiento.html"
+                  type="button"
+                  class="btn btn-outline-danger"
+                >
+                  <i class="bi bi-play-circle"> Reproducir</i>
+                </a>
+              </div>
+
+              <aside class="accordion" id="acordeonfacha">
+                <div class="accordion-item bg-dark">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button bg-dark text-danger"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Temporada 1
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#acordeonfacha"
+                  >
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/1.jpg"
+                            class="img-fluid rounded-start"
+                            alt="cap 1"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Morir para vivir</h5>
+                            <p class="card-text">
+                              Tras cuatro años de confinamiento solitario en una
+                              cárcel de EE. UU., Teresa recibe la visita de un
+                              extraño con un mensaje oculto... y la esperanza de
+                              escapar.
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">44 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/2.jpg"
+                            class="img-fluid rounded-start"
+                            alt="cap 2"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Bye, bye, gringos</h5>
+                            <p class="card-text">
+                              Tras estar cerca de la muerte, Teresa, aún débil,
+                              escapa hacia el sur del Río Bravo junto a sus
+                              rescatadores. Sofía llega a Colombia, pero la
+                              cazan en el aeropuerto
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">48 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/3.jpg"
+                            class="img-fluid rounded-start"
+                            alt="cap 3"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">El trato</h5>
+                            <p class="card-text">
+                              Landero logra que Teresa ingrese a Colombia para
+                              ver a su hija. Miembros de la DEA encuentran un
+                              video de Sofía en redes sociales que los conduce a
+                              Málaga
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">44 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/6.webp"
+                            class="img-fluid rounded-start"
+                            alt="cap 4"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">La bienvenida</h5>
+                            <p class="card-text">
+                              Aterrorizada, Paloma llama a Teresa. En Bolivia,
+                              Jonathan encuentra la ubicación de la foto del
+                              Jinete Negro. Ahí ve a dos hombres y comienza a
+                              seguirlos
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">45 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/8.jpg"
+                            class="img-fluid rounded-start"
+                            alt="cap 5"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Desaparecida</h5>
+                            <p class="card-text">
+                              Teresa y su equipo atacan el complejo donde están
+                              torturando a Jonathan. Sofía visita a Mateo. La
+                              senadora Kozar recibe una oferta de información
+                              sobre Epifanio y Teresa
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">44 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-dark">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed bg-dark text-danger"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Temporada 2
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#acordeonfacha"
+                  >
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/3.jpg"
+                            class="img-fluid rounded-start"
+                            alt="t2 e1"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Morir para vivir</h5>
+                            <p class="card-text">
+                              Tras cuatro años de confinamiento solitario en una
+                              cárcel de EE. UU., Teresa recibe la visita de un
+                              extraño con un mensaje oculto... y la esperanza de
+                              escapar.
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">44 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/1.jpg"
+                            class="img-fluid rounded-start"
+                            alt="t2 e2"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Bye, bye, gringos</h5>
+                            <p class="card-text">
+                              Tras estar cerca de la muerte, Teresa, aún débil,
+                              escapa hacia el sur del Río Bravo junto a sus
+                              rescatadores. Sofía llega a Colombia, pero la
+                              cazan en el aeropuerto
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">43 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/8.jpg"
+                            class="img-fluid rounded-start"
+                            alt="t2 e3"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">El trato</h5>
+                            <p class="card-text">
+                              Landero logra que Teresa ingrese a Colombia para
+                              ver a su hija. Miembros de la DEA encuentran un
+                              video de Sofía en redes sociales que los conduce a
+                              Málaga
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">43 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/9.webp"
+                            class="img-fluid rounded-start"
+                            alt="t2 e4"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">La bienvenida</h5>
+                            <p class="card-text">
+                              Aterrorizada, Paloma llama a Teresa. En Bolivia,
+                              Jonathan encuentra la ubicación de la foto del
+                              Jinete Negro. Ahí ve a dos hombres y comienza a
+                              seguirlos
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">50 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/6.webp"
+                            class="img-fluid rounded-start"
+                            alt="t2 e5"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Desaparecida</h5>
+                            <p class="card-text">
+                              Teresa y su equipo atacan el complejo donde están
+                              torturando a Jonathan. Sofía visita a Mateo. La
+                              senadora Kozar recibe una oferta de información
+                              sobre Epifanio y Teresa
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">48 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-dark">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed bg-dark text-danger"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Temporada 3
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#acordeonfacha"
+                  >
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/6.webp"
+                            class="img-fluid rounded-start"
+                            alt="cap"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body bg-dark">
+                            <h5 class="card-title">Morir para vivir</h5>
+                            <p class="card-text">
+                              Tras cuatro años de confinamiento solitario en una
+                              cárcel de EE. UU., Teresa recibe la visita de un
+                              extraño con un mensaje oculto... y la esperanza de
+                              escapar.
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">49 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/7.jpg"
+                            class="img-fluid rounded-start"
+                            alt="cap"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Bye, bye, gringos</h5>
+                            <p class="card-text">
+                              Tras estar cerca de la muerte, Teresa, aún débil,
+                              escapa hacia el sur del Río Bravo junto a sus
+                              rescatadores. Sofía llega a Colombia, pero la
+                              cazan en el aeropuerto
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">49 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/8.jpg"
+                            class="img-fluid rounded-start"
+                            alt="cap"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">El trato</h5>
+                            <p class="card-text">
+                              Landero logra que Teresa ingrese a Colombia para
+                              ver a su hija. Miembros de la DEA encuentran un
+                              video de Sofía en redes sociales que los conduce a
+                              Málaga
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">50 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/9.webp"
+                            class="img-fluid rounded-start"
+                            alt="cap"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body bg-dark">
+                            <h5 class="card-title">La bienvenida</h5>
+                            <p class="card-text">
+                              Aterrorizada, Paloma llama a Teresa. En Bolivia,
+                              Jonathan encuentra la ubicación de la foto del
+                              Jinete Negro. Ahí ve a dos hombres y comienza a
+                              seguirlos
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">44 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-danger">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="../img/detalleSerie/serieee/10.jpg"
+                            class="img-fluid rounded-start"
+                            alt="cap"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body bg-dark">
+                            <h5 class="card-title">Desaparecida</h5>
+                            <p class="card-text">
+                              Teresa y su equipo atacan el complejo donde están
+                              torturando a Jonathan. Sofía visita a Mateo. La
+                              senadora Kozar recibe una oferta de información
+                              sobre Epifanio y Teresa
+                            </p>
+                            <p class="card-text">
+                              <small class="text-muted">60 min</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/lanzamientos/theoffice.jpg"
+                    class="w-100 h-100"
+                    alt="The office"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/lanzamientos/lagloria.jpg"
+                    class="w-100"
+                    alt="La gloria"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/lanzamientos/miradaindiscreta.jpg"
+                    class="w-100"
+                    alt="Mirada indiscreta"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL ACLAMADAS POR LA CRITICA-->
+      <section
+        class="modal fade text-light"
+        id="modalSerieAclamada"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">
+                Breaking Bad
+              </h2>
+              <button
+                type="button"
+                class="btn-close bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detalleSerie/dramaticas/breakingbadportada.jpg"
+                alt="Breaking Bad"
+                class="img-modal"
+              />
+              <p>
+                Un profesor de Química de secundaria con cáncer terminal se
+                asocia a un exestudiante para asegurar el futuro de su familia
+                al fabricar y vender metanfetamina.
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 5 temporadas <br />
+                +16 <br />2013
+              </p>
+
+              <div class="text-center py-2">
+                <a
+                  href="./mantenimiento.html"
+                  type="button"
+                  class="btn btn-outline-danger"
+                >
+                  <i class="bi bi-play-circle"> Reproducir</i>
+                </a>
+              </div>
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/dramaticas/peaky.jpg"
+                    class="w-100"
+                    alt="Peaky Blinders"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/dramaticas/saul.jpg"
+                    class="w-100"
+                    alt="Better call Saul"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/dramaticas/suits.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="La ley de los audaces"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL EMOCIONANTES -->
+      <section
+        class="modal fade text-light"
+        id="modalSerieEmocionante"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">
+                El Novato
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detalleSerie/emocionantes/elnovato.jpg"
+                alt="El Novato"
+                class="img-modal"
+              />
+              <p>
+                Un abogado novato de la CIA cae sin pensarlo en el peligroso
+                mundo del espionaje internacional cuando una exagente amenaza
+                con exponer secretos de la agencia.
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 8 episodios <br />
+                +16 <br />2022
+              </p>
+              <div class="text-center py-2">
+                <a
+                  href="./mantenimiento.html"
+                  type="button"
+                  class="btn btn-outline-danger"
+                >
+                  <i class="bi bi-play-circle"> Reproducir</i>
+                </a>
+              </div>
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/emocionantes/designated.jpg"
+                    class="w-100 h-100"
+                    alt="Designated Survivor"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/emocionantes/casapapel.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="La casa de papel"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/emocionantes/stranger.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="Stranger Things"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL SOBRE CRIMENES -->
+      <section
+        class="modal fade text-dark"
+        id="modalSerieCrimenes"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">
+                Vis a vis
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detalleSerie/crimenes/vis.jpg"
+                alt="Vis a vis"
+                class="img-modal"
+              />
+              <p>
+                Sentenciada a pasar siete años en prisión por crímenes cometidos
+                por su jefe, la ingenua Macarena lucha por adaptarse a un
+                ambiente lleno de mujeres peligrosas.
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 5 temporadas <br />
+                16+ <br />2020
+              </p>
+              <div class="text-center">
+                <button type="button" class="btn btn-danger">Reproducir</button>
+              </div>
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/crimenes/ozark.jpg"
+                    class="w-100"
+                    alt="Ozark"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/crimenes/sinner.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="The Sinner"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/crimenes/mindhunter.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="Mindhunter"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL POPULARES -->
+      <section
+        class="modal fade text-dark"
+        id="modalSeriePopulares"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">
+                New Amsterdam
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detalleSerie/populares/newAmsterdam.jpg"
+                alt="New Amsterdam"
+                class="img-modal"
+              />
+              <p>
+                El hospiral más antiguo de los EE.UU. recibe a un nuevo
+                director: el inconformista Max Goodwin, un médico decidido a
+                cambiar las cosas y salvar vidas.
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 2 temporadas <br />
+                16+ <br />2019
+              </p>
+              <div class="text-center">
+                <button type="button" class="btn btn-danger">Reproducir</button>
+              </div>
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/populares/gambito.jpg"
+                    class="w-100"
+                    alt="Gambito de dama"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/populares/shooter.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="Shooter"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/populares/you.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="You"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL ADOLESCENTES -->
+      <section
+        class="modal fade text-dark"
+        id="modalSerieAdolescentes"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">Atypical</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detalleSerie/adolescentes/atypical.jpg"
+                alt="Atypical"
+                class="img-modal"
+              />
+              <p>
+                Decidido a tener novia, un adolescente con un transtorno autista
+                se dispone a encontrar su independencia y termina guiando a su
+                familia por un viaje de autodescubrimiento.
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 4 temporadas <br />
+                13+ <br />2021
+              </p>
+              <div class="text-center">
+                <button type="button" class="btn btn-danger">Reproducir</button>
+              </div>
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/adolescentes/vivir.jpg"
+                    class="w-100"
+                    alt="Vivir sin permiso"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/adolescentes/calamar.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="El juego del calamar"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/adolescentes/dark.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="Dark"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL SOLO EN NETFLIX -->
+      <section
+        class="modal fade text-dark"
+        id="modalSerieSoloNetflix"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">
+                ¿Quien mato a Sara?
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detalleSerie/soloNetflix/saraa.jpeg"
+                alt="Quien mato a Sara?"
+                class="img-modal"
+              />
+              <p>
+                Resuelto a hacer venganza y demostrar que lo incriminaron en la
+                muerte de su hermana. Álex se dispone a sacar a la luz mucho más
+                que al verdadero autor del asesinato.
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 3 temporadas <br />
+                16+ <br />2022
+              </p>
+              <div class="text-center">
+                <button type="button" class="btn btn-danger">Reproducir</button>
+              </div>
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/soloNetflix/fauda.jpg"
+                    class="w-100 h-100"
+                    alt="Fauda"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/soloNetflix/dinastia.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="Dinastia"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detalleSerie/soloNetflix/otrayo.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="Mi otra yo"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--MODALS-->
+      <section
+        class="modal fade"
+        id="idModalBoton"
+        tabindex="-1"
+        aria-labelledby="ejemploModal"
+        aria-hidden="true"
+      >
+        <article class="modal-dialog">
+          <div class="modal-content bg-dark">
+            <article class="modal-header">
+              <h1 class="modal-title text-light fs-5" id="ejemploModal">
+                Contestaremos lo mas rapido posible.
+              </h1>
+              <button
+                type="button"
+                class="btn-close text-bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </article>
+            <section class="modal-body">
+              <form>
+                <article class="mb-3">
+                  <label for="usuario" class="col-form-label text-light"
+                    >Nombre / Usuario:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ej: Matias / Matxx"
+                    id="usuario"
+                    required
+                    minlength="5"
+                    maxlength="50"
+                  />
+                </article>
+                <article class="mb-3">
+                  <label for="email" class="col-form-label text-light"
+                    >E-mail:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Ej: mta@mail.com"
+                    id="email"
+                    required
+                    required
+                    minlength="10"
+                    maxlength="100"
+                  />
+                </article>
+                <article class="mb-3">
+                  <label for="consulta" class="col-form-label text-light"
+                    >Consulta:</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="consulta"
+                    required
+                    rows="5"
+                    minlength="20"
+                    maxlength="500"
+                  ></textarea>
+                </article>
+                <article class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn text-light bg-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button type="submit" class="btn text-light rojo">
+                    Enviar!
+                  </button>
+                </article>
+              </form>
+            </section>
+          </div>
+        </article>
+      </section>
+      <!-- modal log in -->
+      <section
+        class="modal fade"
+        id="modallogin"
+        tabindex="-1"
+        aria-labelledby="mlogin"
+        aria-hidden="true"
+      >
+        <article class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="mlogin">inicar sesion</h1>
+              <button
+                type="button"
+                class="btn-close bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <section class="modal-body">
+              <form>
+                <article class="mb-3">
+                  <label for="email" class="col-form-label text-light"
+                    >E-mail:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="zzz@mail.com"
+                    id="email"
+                    required
+                    minlength="10"
+                    maxlength="100"
+                  />
+                </article>
+                <article class="mb-3">
+                  <label for="pass" class="col-form-label text-light"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder=""
+                    id="pass"
+                    required
+                    minlength="8"
+                    maxlength="20"
+                  />
+                </article>
+                <article class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button type="submit" class="btn rojo text-light">
+                    Iniciar sesion
+                  </button>
+                </article>
+              </form>
+            </section>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="fondoDelNegro text-light py-4">
+      <section class="container">
+        <article class="row text-secondary">
+          <aside class="col-12 col-md-4 col-lg-4 text-center mb-2">
+            <img src="/img/nefli (4).png" alt="nefli" width="170px" />
+          </aside>
+
+          <aside class="col-12 col-md-4 col-lg-4 mb-2">
+            <h5>Preguntas? Llama al 0800 666 3331</h5>
+            <p class="fs-6">
+              Tambien podes Visitar nuestras redes sociales <br />
+              y descubri muchas cosas nuevas!
+            </p>
+            <div class="d-flex justify-content-around mt-4">
+              <a href="./mantenimiento.html" class="text-secondary fs-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+
+              <a href="./mantenimiento.html" class="text-secondary fs-2 mx-1">
+                <i class="bi bi-twitter"></i
+              ></a>
+
+              <a href="./mantenimiento.html" class="text-secondary fs-2">
+                <i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </aside>
+          <aside class="col-12 col-md-4 col-lg- mb-2">
+            <h5>Por mas consultas</h5>
+            <a href="./acercaDeNosotros.html" class="fw-bold text-danger fs-4"
+              >Acerca de nosotros</a
+            >
+            <p class="my-3">
+              Si tenes dudas especificas dejanosla aqui abajo
+              <spam class="fs-5 text-light">↓</spam>
+            </p>
+            <button
+              type="button"
+              class="btn text-light border-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#idModalBoton"
+              data-bs-whatever="@mdo"
+            >
+              Consultanos!
+            </button>
+          </aside>
+        </article>
+      </section>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

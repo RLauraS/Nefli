@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="series , peliculas , taquilleras , proximos estrenos"
+    />
+    <meta name="description" content="Servicio de streaming" />
+    <meta name="author" content="Grupo 5" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>N E F L I</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark fondoDelNegro">
+        <div class="container">
+          <a href="../index.html"
+            ><img
+              src="../img/N e f l i (1).png"
+              alt="logo2"
+              width="100px"
+              class="me-4"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContenido"
+            aria-controls="navbarContenido"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContenido">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./detallePeliculas.html"
+                      >Peliculas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./DetalleSerie.html"
+                      >Series</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Suscripcion</a>
+              </li>
+            </ul>
+            <button
+              class="btn btn-danger mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modallogin"
+            >
+              Iniciar Sesion
+            </button>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar Peliculas y Series"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-danger" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 bg-black text-danger">
+      <section class="text-center fondoDelNegro text-light py-3">
+        <h1>Nosotros</h1>
+        <p class="ps-4 pe-4">
+          Somos un grupo de programadores, amigos que nos gustaria hacer
+          disfrutar a las personas con peliculas y series a bajo costo!
+        </p>
+      </section>
+      <section class="container">
+        <article class="row">
+          <aside class="col-sm-6 col-md-6 col-lg-6">
+            <img
+              src="../img/developers/nn-0001.jpg"
+              alt="matias"
+              width="100%"
+              class="my-4"
+            />
+          </aside>
+          <aside class="col-sm-6 col-md-6 col-lg-6 my-4">
+            <h5>Nombre:</h5>
+            <p>Giacobbe Matias</p>
+            <h5>Edad:</h5>
+            <p>20 años</p>
+            <h5>Puesto:</h5>
+            <p>Scrum Master / backend</p>
+            <h5>Pelicula / Serie Favorita:</h5>
+            <p>Harry Potter</p>
+          </aside>
+          <hr />
+          <aside class="col-sm-6 col-md-6 col-lg-6">
+            <img
+              src="../img/developers/Emanuel.jpeg"
+              alt="Emanuel"
+              width="100%"
+              class="my-3"
+            />
+          </aside>
+          <aside class="col-sm-6 col-md-6 col-lg-6 my-4">
+            <h5>Nombre:</h5>
+            <p>Emanuel Ruiz Villalobo</p>
+            <h5>Edad:</h5>
+            <p>26 años</p>
+            <h5>Puesto:</h5>
+            <p>Programador backend / Diseñador</p>
+            <h5>Pelicula / Serie Favorita:</h5>
+            <p>Peaky Blinders</p>
+          </aside>
+          <hr />
+          <aside class="col-sm-6 col-md-6 col-lg-6">
+            <img
+              src="../img/developers/diego.jpg"
+              alt="Diego"
+              width="100%"
+              class="my-3"
+            />
+          </aside>
+          <aside class="col-sm-6 col-md-6 col-lg-6 my-4">
+            <h5>Nombre:</h5>
+            <p>Diego Mercado</p>
+            <h5>Edad:</h5>
+            <p>25 años</p>
+            <h5>Puesto:</h5>
+            <p>Programador Frontend</p>
+            <h5>Pelicula / Serie Favorita:</h5>
+            <p>Rapido y Furiosos</p>
+          </aside>
+          <hr />
+          <aside class="col-sm-6 col-md-6 col-lg-6">
+            <img
+              src="../img/developers/lau_ia.jpg"
+              alt="Laura"
+              width="100%"
+              class="my-3"
+            />
+          </aside>
+          <aside class="col-sm-6 col-md-6 col-lg-6 my-4">
+            <h5>Nombre:</h5>
+            <p>Rota Laura Susana</p>
+            <h5>Edad:</h5>
+            <p>33 años</p>
+            <h5>Puesto:</h5>
+            <p>Programadora Frontend</p>
+            <h5>Pelicula / Serie Favorita:</h5>
+            <p>El Ultimo Soldado</p>
+          </aside>
+          <hr />
+          <aside class="col-sm-6 col-md-6 col-lg-6">
+            <img
+              src="../img/developers/david.jpg"
+              alt="Laura"
+              width="100%"
+              class="my-3"
+            />
+          </aside>
+          <aside class="col-sm-6 col-md-6 col-lg-6 my-4">
+            <h5>Nombre:</h5>
+            <p>Copa David</p>
+            <h5>Edad:</h5>
+            <p>24 años</p>
+            <h5>Puesto:</h5>
+            <p>Programador Frontend</p>
+            <h5>Pelicula / Serie Favorita:</h5>
+            <p>El Señor de los Anillos</p>
+          </aside>
+        </article>
+      </section>
+      <!--MODAL consultanos-->
+      <section
+        class="modal fade"
+        id="idModalBoton"
+        tabindex="-1"
+        aria-labelledby="ejemploModal"
+        aria-hidden="true"
+      >
+        <article class="modal-dialog">
+          <div class="modal-content bg-dark">
+            <article class="modal-header">
+              <h1 class="modal-title text-light fs-5" id="ejemploModal">
+                Contestaremos lo mas rapido posible.
+              </h1>
+              <button
+                type="button"
+                class="btn-close text-bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </article>
+            <section class="modal-body">
+              <form>
+                <article class="mb-3">
+                  <label for="usuario" class="col-form-label text-light"
+                    >Nombre / Usuario:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ej: Matias / Matxx"
+                    id="usuario"
+                    required
+                    minlength="5"
+                    maxlength="50"
+                  />
+                </article>
+                <article class="mb-3">
+                  <label for="email" class="col-form-label text-light"
+                    >E-mail:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Ej: mta@mail.com"
+                    id="email"
+                    required
+                    required
+                    minlength="10"
+                    maxlength="100"
+                  />
+                </article>
+                <article class="mb-3">
+                  <label for="consulta" class="col-form-label text-light"
+                    >Consulta:</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="consulta"
+                    required
+                    rows="5"
+                    minlength="20"
+                    maxlength="500"
+                  ></textarea>
+                </article>
+                <article class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn text-light bg-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button type="submit" class="btn text-light rojo">
+                    Enviar!
+                  </button>
+                </article>
+              </form>
+            </section>
+          </div>
+        </article>
+      </section>
+      <!-- modal log in -->
+      <section
+        class="modal fade"
+        id="modallogin"
+        tabindex="-1"
+        aria-labelledby="mlogin"
+        aria-hidden="true"
+      >
+        <article class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="mlogin">inicar sesion</h1>
+              <button
+                type="button"
+                class="btn-close bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <section class="modal-body">
+              <form>
+                <article class="mb-3">
+                  <label for="email" class="col-form-label text-light"
+                    >E-mail:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="zzz@mail.com"
+                    id="email"
+                    required
+                    minlength="10"
+                    maxlength="100"
+                  />
+                </article>
+                <article class="mb-3">
+                  <label for="pass" class="col-form-label text-light"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder=""
+                    id="pass"
+                    required
+                    minlength="8"
+                    maxlength="20"
+                  />
+                </article>
+                <article class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button type="submit" class="btn rojo text-light">
+                    Iniciar sesion
+                  </button>
+                </article>
+              </form>
+            </section>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="fondoDelNegro text-light py-4">
+      <section class="container">
+        <article class="row text-secondary">
+          <aside class="col-12 col-md-4 col-lg-4 text-center mb-2">
+            <img src="../img/nefli (4).png" alt="nefli" width="170px" />
+          </aside>
+
+          <aside class="col-12 col-md-4 col-lg-4 mb-2">
+            <h5>Preguntas? Llama al 0800 666 3331</h5>
+            <p class="fs-6">
+              Tambien podes Visitar nuestras redes sociales <br />
+              y descubri muchas cosas nuevas!
+            </p>
+            <div class="d-flex justify-content-around mt-4">
+              <a href="./mantenimiento.html" class="text-secondary fs-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+
+              <a href="./mantenimiento.html" class="text-secondary fs-2 mx-1">
+                <i class="bi bi-twitter"></i
+              ></a>
+
+              <a href="./mantenimiento.html" class="text-secondary fs-2">
+                <i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </aside>
+          <aside class="col-12 col-md-4 col-lg- mb-2">
+            <h5>Por mas consultas</h5>
+            <a href="#" class="fw-bold text-danger fs-4">Acerca de nosotros</a>
+            <p class="my-3">
+              Si tenes dudas especificas dejanosla aqui abajo
+              <spam class="fs-5 text-light">↓</spam>
+            </p>
+            <button
+              type="button"
+              class="btn text-light border-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#idModalBoton"
+              data-bs-whatever="@mdo"
+            >
+              Consultanos!
+            </button>
+          </aside>
+        </article>
+      </section>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

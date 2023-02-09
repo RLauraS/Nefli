@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="series , peliculas , taquilleras , proximos estrenos"
+    />
+    <meta name="description" content="Servicio de streaming" />
+    <meta name="author" content="Grupo 5" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>N E F L I</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark fondoDelNegro">
+        <div class="container">
+          <a href="/index.html"
+            ><img
+              src="../img/N e f l i (1).png"
+              alt="logo2"
+              width="100px"
+              class="me-4"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContenido"
+            aria-controls="navbarContenido"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContenido">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./detallePeliculas.html"
+                      >Peliculas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./DetalleSerie.html"
+                      >Series</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./suscripcion.html">Suscripcion</a>
+              </li>
+            </ul>
+            <button
+              class="btn btn-danger mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modallogin"
+            >
+              Iniciar Sesion
+            </button>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar Peliculas y Series"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-danger" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 bg-black text-danger">
+      <div
+        id="carrusel"
+        class="carousel slide carousel-fade mb-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../img/detallePeli/portada/SPIDER-MAN-ACROSS-THE-SPIDER-VERSE-Will-Have-6-Dominant-Animation-Styles - copia.jpg"
+              class="d-block w-100 banner"
+              alt="peaky blinders"
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/detallePeli/portada/huvh_thumb - copia.jpg"
+              class="d-block w-100 banner"
+              alt="breaking bad"
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/detallePeli/portada/hflCiNtY6MA-HD - copia.jpg"
+              class="d-block w-100 banner"
+              alt="dark"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carrusel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carrusel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section class="container-fluid mt-5 mt-lg-0">
+        <article class="row">
+          <h3>Nuevos lanzamientos</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalPeliculaLanzamientos"
+              href="#"
+              ><img
+                src="../img/detallePeli/lanzamientos/vengeance.jpg"
+                alt="Vengeance"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/lanzamientos/adAstra.jpg"
+                alt="Ad Astra"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/lanzamientos/reyes.png"
+                alt="Los reyes del mundo"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/lanzamientos/renglones.jpg"
+                alt="Los renglones torcidos de dios"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/lanzamientos/venganza.jpg"
+                alt="Me llamo venganza"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/lanzamientos/angel.jpg"
+                alt="El angel de la muerte"
+                class="w-100"
+            /></a>
+          </aside>
+        </article>
+        <article class="row">
+          <h3>Accion</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalPeliculaAccion"
+              href="#"
+              ><img
+                src="../img/detallePeli/accion/asesinoSolitario.png"
+                alt="Pelicula Asesino Solitario"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/accion/iceroad3.jpg"
+                alt="Pelicula Ice Road"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/accion/xxxr.jpg"
+                alt="Pelicula Fuera de Ley"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/accion/asesinoMision.jpg"
+                alt="Pelicula Asesino Venganza"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/accion/elPlan.jpg"
+                alt="Pelicula El plan maestro"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/accion/jhon.jpg"
+                alt="Pelicula Jhon Wick2"
+                class="w-100"
+            /></a>
+          </aside>
+        </article>
+        <article class="row mt-3">
+          <h3>Comedias</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalPeliculaComedia"
+              href="#"
+              ><img
+                src="../img/detallePeli/comedias/shrek.jpg"
+                alt="Shrek2"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/comedias/alertaRoja.jpg"
+                alt="Alerta Roja"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/comedias/niños2.jpg"
+                alt="Son como niños 2"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/comedias/jefe.jpg"
+                alt="Jefe en pañales 2"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#"
+              ><img
+                src="../img/detallePeli/comedias/corazon.jpg"
+                alt="Corazon loco"
+                class="w-100"
+            /></a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/comedias/obra.jpg"
+                alt="Mi obra maestra"
+                class="w-100"
+              />
+            </a>
+          </aside>
+        </article>
+        <article class="row mt-3">
+          <h3>De intriga</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalPeliculaIntriga"
+              href="#"
+            >
+              <img
+                src="../img/detallePeli/intriga/isla-siniestra.jpg"
+                alt="La isla siniestra"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/intriga/fragmentado.jpg"
+                alt="Fragmentado"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/intriga/jaula.jpg"
+                alt="Jaula"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/intriga/fractura.jpg"
+                alt="Fractura"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/intriga/canto-lobo.jpg"
+                alt="El canto del lobo"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/intriga/triple9.jpg"
+                alt="Triple 9"
+                class="w-100"
+              />
+            </a>
+          </aside>
+        </article>
+        <article class="row mt-3">
+          <h3>Suspenso</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalPeliculaSuspenso"
+              href="#"
+            >
+              <img
+                src="../img/detallePeli/suspenso/los-ilusionistas.jpg"
+                alt="Los ilusionistas"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/suspenso/harriet.jpg"
+                alt="Harriet"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/suspenso/1917.jpg"
+                alt="1997"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/suspenso/caceria.jpg"
+                alt="La caceria"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/suspenso/culpable.jpg"
+                alt="Culpable"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/suspenso/spiderman.jpg"
+                alt="Spiderman lejos de casa"
+                class="w-100"
+              />
+            </a>
+          </aside>
+        </article>
+        <article class="row mt-3">
+          <h3>Peliculas inspiradoras</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalPeliculaInspiradora"
+              href="#"
+            >
+              <img
+                src="../img/detallePeli/inspiradora/garra.jpg"
+                alt="Garra"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/inspiradora/karate-kid3.jpg"
+                alt="Karate Kid 3"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/inspiradora/niñoViento.jpg"
+                alt="El niño que domo el viento"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/inspiradora/pele.jpg"
+                alt="Pelé"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/inspiradora/cielo.jpg"
+                alt="El cielo si existe"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/inspiradora/viven.jpg"
+                alt="Viven"
+                class="w-100"
+              />
+            </a>
+          </aside>
+        </article>
+        <article class="row mt-3">
+          <h3>Películas basadas en hechos reales</h3>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modalPeliculaReales"
+              href="#"
+            >
+              <img
+                src="../img/detallePeli/hechosReales/batalla.jpg"
+                alt="La Batalla de Kamdesh"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/hechosReales/bohemian.jpg"
+                alt="Bohemian Rhapsody"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/hechosReales/precio.jpg"
+                alt="El precio de la verdad"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/hechosReales/amiga.jpg"
+                alt="Mi mejor amiga Ana Frank"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/hechosReales/cra.jpg"
+                alt="Comer rezar amar"
+                class="w-100"
+              />
+            </a>
+          </aside>
+          <aside class="col-6 col-md-4 col-lg-2 my-2">
+            <a href="#">
+              <img
+                src="../img/detallePeli/hechosReales/operacion.jpg"
+                alt="Operacion final"
+                class="w-100"
+              />
+            </a>
+          </aside>
+        </article>
+      </section>
+      <!-- MODAL Lanzamientos-->
+      <section
+        class="modal fade modal-lg text-dark"
+        id="modalPeliculaLanzamientos"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">
+                Vengeance
+              </h2>
+              <button
+                type="button"
+                class="btn-close bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detallePeli/lanzamientos/vengeance.jpg"
+                alt="Vengeance"
+                class="img-modal"
+              />
+              <p class="pt-3">
+                Un policia decide hacer justicia por su cuenta cuando cuatro
+                delincuentes salen impunes después de atacar brutalmente a una
+                madre soltera frente a su hija pequeña.
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 1 h 38 min <br />
+                +16 <br />2017
+              </p>
+              <div class="text-center py-2">
+                <a
+                  href="./mantenimiento.html"
+                  type="button"
+                  class="btn btn-outline-danger"
+                >
+                  <i class="bi bi-play-circle"> Reproducir</i>
+                </a>
+              </div>
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/lanzamientos/adAstra.jpg"
+                    class="w-100"
+                    alt="Ad Astra"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/lanzamientos/venganza.jpg"
+                    class="w-100"
+                    alt="Venganza"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/lanzamientos/angel.jpg"
+                    class="w-100"
+                    alt="Angel de la muerte"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL Accion-->
+      <section
+        class="modal modal-lg fade text-dark"
+        id="modalPeliculaAccion"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">
+                Asesino Solitario
+              </h2>
+              <button
+                type="button"
+                class="btn-close bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detallePeli/accion/asesinoSolitario.png"
+                alt="Asesino solitario"
+                class="img-modal"
+              />
+              <p class="pt-3">
+                Cuando el agente del FBI, Jack Crawford (Jason Statham), se
+                entera de que ha regresado a San Francisco el famoso asesino
+                conocido como Rogue (Jet Li), cuya identidad es desconocida, ve
+                la oportunidad de vengar el brutal asesinato de su anterior
+                compañero y su familia, ocurrido tres años atrás.
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 1 h 43 min <br />
+                +16 <br />2007
+              </p>
+              <div class="text-center">
+                <a
+                  href="./mantenimiento.html"
+                  type="button"
+                  class="btn btn-outline-danger"
+                >
+                  <i class="bi bi-play-circle"> Reproducir</i>
+                </a>
+              </div>
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/accion/asesinoMision.jpg"
+                    class="w-100"
+                    alt="Asesino mision venganza"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/accion/elPlan.jpg"
+                    class="w-100"
+                    alt="El plan maestro"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/accion/jhon.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="John Wick"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL COMEDIA -->
+      <section
+        class="modal fade text-dark modal-lg"
+        id="modalPeliculaComedia"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">Shrek 2</h2>
+              <button
+                type="button"
+                class="btn-close bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detallePeli/comedias/shrek-netflixpng.webp"
+                alt="Shrek2"
+                class="img-modal"
+              />
+              <p>
+                Shrek es un gran ogro verde que vive en un pantano. Allí reside
+                felizmente, asustando a los humanos que se aventuran o se
+                pierden, hasta que un día descubre que el lugar ha sido invadido
+                por personajes de cuentos de hadas que han sido expulsados de la
+                comarca por el villano Lord Farquaad.
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 1 h 30 min <br />
+                +7 <br />2004
+              </p>
+              <div class="text-center">
+                <a
+                  href="./mantenimiento.html"
+                  type="button"
+                  class="btn btn-outline-danger"
+                >
+                  <i class="bi bi-play-circle"> Reproducir</i>
+                </a>
+              </div>
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/comedias/jefe.jpg"
+                    class="w-100"
+                    alt="Jefe en pañales"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/comedias/obra.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="Mi obra maestra"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/comedias/alertaRoja.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="Alerta roja"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL intriga -->
+      <section
+        class="modal fade modal-lg text-dark"
+        id="modalPeliculaIntriga"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">
+                La Isla Siniestra
+              </h2>
+              <button
+                type="button"
+                class="btn-close bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detallePeli/intriga/shutter.webp"
+                alt="La isla siniestra"
+                class="img-modal"
+              />
+              <p>
+                Cuando un alguacil federal llega a un confinamiento para
+                criminales dementes, lo que comienza como una investigación de
+                rutina rápidamente se torna en algo siniestro.
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 2 h 18 min <br />
+                16+ <br />2010
+              </p>
+              <div class="text-center">
+                <button type="button" class="btn btn-danger">Reproducir</button>
+              </div>
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/intriga/jaula.jpg"
+                    class="w-100"
+                    alt="Jaula"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/intriga/fractura.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="Fractura"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/intriga/fragmentado.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="Fragmentado"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL SUSPENSO -->
+      <section
+        class="modal fade text-dark"
+        id="modalPeliculaSuspenso"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">
+                Nada es lo que parece
+              </h2>
+              <button
+                type="button"
+                class="btn-close bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detallePeli/suspenso/los-ilusionistas.jpg"
+                alt="Nada es lo que parece"
+                class="img-modal"
+              />
+              <p>
+                Un grupo de ilusionistas roba un banco como parte del
+                espectáculo; el público queda maravillado, pero el FBI no
+                entiende como incriminar la magia.
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 1 h 55 min <br />
+                13+ <br />2013
+              </p>
+              <div class="text-center">
+                <button type="button" class="btn btn-danger">Reproducir</button>
+              </div>
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/suspenso/culpable.jpg"
+                    class="w-100"
+                    alt="Culpable"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/suspenso/harriet.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="Harriet"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/suspenso/caceria.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="La Caceria"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL INSPIRADORA -->
+      <section
+        class="modal fade text-dark"
+        id="modalPeliculaInspiradora"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">Garra</h2>
+              <button
+                type="button"
+                class="btn-close bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detallePeli/inspiradora/garra.jpg"
+                alt="Garra"
+                class="img-modal"
+              />
+              <p>
+                Cuando un desafortunado cazatalentos de básquetbol encuentra un
+                jugador excepcional en España, se dispone a demotrar que pueden
+                triunfar en la NBA.
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 1 h 58 min <br />
+                16+ <br />2022
+              </p>
+              <div class="text-center">
+                <button type="button" class="btn btn-danger">Reproducir</button>
+              </div>
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/inspiradora/karate-kid3.jpg"
+                    class="w-100"
+                    alt="Karate kid 3"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/inspiradora/niñoViento.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="El niño que domo el viento"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/inspiradora/pele.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="Pelé"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MODAL BASADA EN HECHOS REALES -->
+      <section
+        class="modal fade text-dark"
+        id="modalPeliculaReales"
+        tabindex="-1"
+        aria-labelledby="modalPeliculaLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalPeliculaLabel">
+                La Batalla de Kamdesh
+              </h2>
+              <button
+                type="button"
+                class="btn-close bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="../img/detallePeli/hechosReales/batalla.jpg"
+                alt="La Batalla de Kamdesh"
+                class="img-modal"
+              />
+              <p>
+                Durante la batalla de Kamdesh, un reducido grupo de soldados
+                estadounidenses en una remota base en Afganistán debe defenderse
+                del brutal ataque de combatientes talibanes.
+              </p>
+              <p>
+                <i class="bi bi-stopwatch"></i> 2 h 3 min <br />
+                16+ <br />2020
+              </p>
+              <div class="text-center">
+                <button type="button" class="btn btn-danger">Reproducir</button>
+              </div>
+              <article class="row mt-2 justify-content-between">
+                <h4>Más titulos similares a este.</h4>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/hechosReales/operacion.jpg"
+                    class="w-100"
+                    alt="Operacion final"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/hechosReales/amiga.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="Mi mejor amiga Ana Frank"
+                  />
+                </aside>
+                <aside class="col-4">
+                  <img
+                    src="../img/detallePeli/hechosReales/precio.jpg"
+                    class="w-100"
+                    height="100%"
+                    alt="El precio de la verdad"
+                  />
+                </aside>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--MODALS-->
+      <section
+        class="modal fade"
+        id="idModalBoton"
+        tabindex="-1"
+        aria-labelledby="ejemploModal"
+        aria-hidden="true"
+      >
+        <article class="modal-dialog">
+          <div class="modal-content bg-dark">
+            <article class="modal-header">
+              <h1 class="modal-title text-light fs-5" id="ejemploModal">
+                Contestaremos lo mas rapido posible.
+              </h1>
+              <button
+                type="button"
+                class="btn-close text-bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </article>
+            <section class="modal-body">
+              <form>
+                <article class="mb-3">
+                  <label for="usuario" class="col-form-label text-light"
+                    >Nombre / Usuario:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ej: Matias / Matxx"
+                    id="usuario"
+                    required
+                    minlength="5"
+                    maxlength="50"
+                  />
+                </article>
+                <article class="mb-3">
+                  <label for="email" class="col-form-label text-light"
+                    >E-mail:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Ej: mta@mail.com"
+                    id="email"
+                    required
+                    required
+                    minlength="10"
+                    maxlength="100"
+                  />
+                </article>
+                <article class="mb-3">
+                  <label for="consulta" class="col-form-label text-light"
+                    >Consulta:</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="consulta"
+                    required
+                    rows="5"
+                    minlength="20"
+                    maxlength="500"
+                  ></textarea>
+                </article>
+                <article class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn text-light bg-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button type="submit" class="btn text-light rojo">
+                    Enviar!
+                  </button>
+                </article>
+              </form>
+            </section>
+          </div>
+        </article>
+      </section>
+      <!-- modal log in -->
+      <section
+        class="modal fade"
+        id="modallogin"
+        tabindex="-1"
+        aria-labelledby="mlogin"
+        aria-hidden="true"
+      >
+        <article class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="mlogin">inicar sesion</h1>
+              <button
+                type="button"
+                class="btn-close bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <section class="modal-body">
+              <form>
+                <article class="mb-3">
+                  <label for="email" class="col-form-label text-light"
+                    >E-mail:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="zzz@mail.com"
+                    id="email"
+                    required
+                    minlength="10"
+                    maxlength="100"
+                  />
+                </article>
+                <article class="mb-3">
+                  <label for="pass" class="col-form-label text-light"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder=""
+                    id="pass"
+                    required
+                    minlength="8"
+                    maxlength="20"
+                  />
+                </article>
+                <article class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button type="submit" class="btn rojo text-light">
+                    Iniciar sesion
+                  </button>
+                </article>
+              </form>
+            </section>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="fondoDelNegro text-light py-4">
+      <section class="container">
+        <article class="row text-secondary">
+          <aside class="col-12 col-md-4 col-lg-4 text-center mb-2">
+            <img src="/img/nefli (4).png" alt="nefli" width="170px" />
+          </aside>
+
+          <aside class="col-12 col-md-4 col-lg-4 mb-2">
+            <h5>Preguntas? Llama al 0800 666 3331</h5>
+            <p class="fs-6">
+              Tambien podes Visitar nuestras redes sociales <br />
+              y descubri muchas cosas nuevas!
+            </p>
+            <div class="d-flex justify-content-around mt-4">
+              <a href="./mantenimiento.html" class="text-secondary fs-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+
+              <a href="./mantenimiento.html" class="text-secondary fs-2 mx-1">
+                <i class="bi bi-twitter"></i
+              ></a>
+
+              <a href="./mantenimiento.html" class="text-secondary fs-2">
+                <i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </aside>
+          <aside class="col-12 col-md-4 col-lg- mb-2">
+            <h5>Por mas consultas</h5>
+            <a href="./acercaDeNosotros.html" class="fw-bold text-danger fs-4"
+              >Acerca de nosotros</a
+            >
+            <p class="my-3">
+              Si tenes dudas especificas dejanosla aqui abajo
+              <spam class="fs-5 text-light">↓</spam>
+            </p>
+            <button
+              type="button"
+              class="btn text-light border-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#idModalBoton"
+              data-bs-whatever="@mdo"
+            >
+              Consultanos!
+            </button>
+          </aside>
+        </article>
+      </section>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

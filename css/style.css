@@ -1,0 +1,117 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+}
+.fondoDelNegro {
+  background: #000000;
+}
+.sacarDecoracion {
+  text-decoration: none;
+}
+.gris {
+  background: #564d4d;
+}
+.rojo {
+  background: #db0000;
+}
+.position-title {
+  bottom: 80%;
+}
+.position-parra {
+  bottom: 72%;
+}
+.position-button {
+  bottom: 67%;
+}
+.margin-button {
+  margin-left: 115px;
+}
+.img {
+  width: 165px;
+  height: 92px;
+}
+.img-modal {
+  width: 100%;
+}
+
+@media all and (min-width: 767px) {
+  .position-title {
+    bottom: 75%;
+    font-size: 50px;
+    left: 5%;
+    font-weight: bold;
+  }
+  .position-parra {
+    font-size: 30px;
+    bottom: 65%;
+    left: 5%;
+  }
+  .position-button {
+    font-size: 25px;
+    bottom: 58%;
+    left: 5%;
+  }
+  .margin-button {
+    margin-left: 200px;
+  }
+}
+@media all and (min-width: 1280px) {
+  .position-title {
+    bottom: 50%;
+    font-size: 100px;
+    left: 5%;
+    font-weight: bold;
+  }
+  .position-parra {
+    font-size: 30px;
+    bottom: 40%;
+    left: 5%;
+  }
+  .position-button {
+    font-size: 25px;
+    bottom: 30%;
+    left: 5%;
+  }
+  .margin-button {
+    margin-left: 200px;
+  }
+  .img-detalle {
+    height: 1100px;
+  }
+}
+@media all and (max-width: 767px) {
+  .banner {
+    height: 300px;
+    object-fit: cover;
+  }
+  .banterror {
+    height: 150px;
+    object-fit: cover;
+  }
+}
+@media all and (min-width: 768px) {
+  .banner {
+    height: 550px;
+    object-fit: cover;
+  }
+  .banterror {
+    height: 350px;
+    object-fit: cover;
+  }
+}
+a img:hover,
+footer img:hover,
+header a:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+footer a:hover {
+  transform: scale(1.5);
+}

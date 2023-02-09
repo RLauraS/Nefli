@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="series , peliculas , taquilleras , proximos estrenos"
+    />
+    <meta name="description" content="Servicio de streaming" />
+    <meta name="author" content="Grupo 5" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>N E F L I</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark fondoDelNegro">
+        <div class="container">
+          <a href="../index.html"
+            ><img
+              src="../img/N e f l i (1).png"
+              alt="logo2"
+              width="100px"
+              class="me-4"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContenido"
+            aria-controls="navbarContenido"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContenido">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./detallePeliculas.html"
+                      >Peliculas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./DetalleSerie.html"
+                      >Series</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="suscripcion.html"
+                  >Suscripcion</a
+                >
+              </li>
+            </ul>
+            <button
+              class="btn btn-danger mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modallogin"
+            >
+              Iniciar Sesion
+            </button>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar Peliculas y Series"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-danger" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 bg-black text-danger">
+      <section class="container pt-5">
+        <h5>
+          Disfruta Nefli en tu smartphone, tablet, smart TV, laptop o
+          dispositivo de streaming, todo por una tarifa plana mensual. Planes
+          desde $ 699 hasta $ 1.899 al mes (sin impuestos incluidos). Sin costos
+          adicionales ni contratos.
+        </h5>
+      </section>
+      <section class="mt-4">
+        <h4 class="text-center">Elegí el plan que más se acomode a vos</h4>
+        <div class="mz-5 text-center">
+          <i class="bi bi-check-lg text-danger fs-3"
+            ><span class="text-light fs-5"
+              >Mirá todo lo quieras. Sin anuncios</span
+            ></i
+          ><br />
+          <i class="bi bi-check-lg text-danger fs-3"
+            ><span class="text-light fs-5"
+              >Disfrutá sin límites en todos tus dispositivos</span
+            ></i
+          ><br />
+          <i class="bi bi-check-lg text-danger fs-3"
+            ><span class="text-light fs-5">Al más bajo costo</span></i
+          >
+        </div>
+      </section>
+      <section class="my-4">
+        <article class="container text-center">
+          <div class="row">
+            <div class="col">
+              <p>Planes</p>
+            </div>
+            <div class="col">
+              <p>Básico</p>
+            </div>
+            <div class="col">
+              <p>Estándar</p>
+            </div>
+            <div class="col">
+              <p>Premium</p>
+            </div>
+            <hr />
+          </div>
+        </article>
+        <article class="container text-center">
+          <div class="row">
+            <div class="col">
+              <p>Precio mensual</p>
+            </div>
+            <div class="col">
+              <p>$ 699</p>
+            </div>
+            <div class="col">
+              <p>$ 1.299</p>
+            </div>
+            <div class="col">
+              <p>$ 1.899</p>
+            </div>
+            <hr />
+          </div>
+        </article>
+        <article class="container text-center">
+          <div class="row">
+            <div class="col">
+              <p>Calidad de video</p>
+            </div>
+            <div class="col">
+              <p>Buena</p>
+            </div>
+            <div class="col">
+              <p>Mejor</p>
+            </div>
+            <div class="col">
+              <p>Óptima</p>
+            </div>
+            <hr />
+          </div>
+        </article>
+        <article class="container text-center">
+          <div class="row">
+            <div class="col">
+              <p>Resolución</p>
+            </div>
+            <div class="col">
+              <p>720p</p>
+            </div>
+            <div class="col">
+              <p>1080p</p>
+            </div>
+            <div class="col">
+              <p>4K+HDR</p>
+            </div>
+            <hr />
+          </div>
+        </article>
+      </section>
+      <section class="py-5 container text-center">
+        <h4>Ingresando al planeta Nefli</h4>
+        <h5>Todo un mundo de entretenimiento</h5>
+      </section>
+      <section class="container border-top border-bottom border-danger py-3">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="Tony"
+              required
+              minlength="1"
+              maxlength="30"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="Apellido" class="form-label">Apellido</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Apellido"
+              placeholder="Stark"
+              required
+              minlength="1"
+              maxlength="50"
+            />
+          </div>
+          <div class="col-12">
+            <label for="numero" class="form-label">Numero de telefono</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="numero"
+              required
+              minlength="10"
+              maxlength="10"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="correo" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="correo"
+              placeholder="tonyst@mail.com"
+              required
+              minlength="5"
+              maxlength="80"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="contraseña" class="form-label">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              id="contraseña"
+              required
+              minlength="8"
+              maxlength="30"
+            />
+          </div>
+          <div class="col-12">
+            <label for="tarjeta" class="form-label">Numero de la tarjeta</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="tarjeta"
+              placeholder="000011223344"
+              required
+              minlength="12"
+              maxlength="15"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="vencimiento" class="form-label"
+              >fecha de vencimiento</label
+            >
+            <input
+              type="date"
+              class="form-control"
+              id="vencimiento"
+              required
+              minlength="1"
+              maxlength="30"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="cod" class="form-label">codigo de seguridad</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="cod"
+              placeholder="123"
+              required
+              minlength="3"
+              maxlength="3"
+            />
+          </div>
+          <div>
+            <label for="plan">Elegí el plan que más se acomode a vos</label>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              required
+            >            
+              <option value="1">Basico ($699 x mes)</option>
+              <option value="2">Estándar ($1299 x mes)</option>
+              <option value="3">Premium ($1899 x mes)</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="gridCheck"
+                required
+              />
+              <label class="form-check-label" for="gridCheck">
+                acepto los terminos y condiciones
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-danger" data-bs-target="#">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </section>
+      <!--MODALS-->
+      <section
+        class="modal fade"
+        id="idModalBoton"
+        tabindex="-1"
+        aria-labelledby="ejemploModal"
+        aria-hidden="true"
+      >
+        <article class="modal-dialog">
+          <div class="modal-content bg-dark">
+            <article class="modal-header">
+              <h1 class="modal-title text-light fs-5" id="ejemploModal">
+                Contestaremos lo mas rapido posible.
+              </h1>
+              <button
+                type="button"
+                class="btn-close text-bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </article>
+            <section class="modal-body">
+              <form>
+                <article class="mb-3">
+                  <label for="usuario" class="col-form-label text-light"
+                    >Nombre / Usuario:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ej: Matias / Matxx"
+                    id="usuario"
+                    required
+                    minlength="5"
+                    maxlength="50"
+                  />
+                </article>
+                <article class="mb-3">
+                  <label for="email" class="col-form-label text-light"
+                    >E-mail:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Ej: mta@mail.com"
+                    id="email"
+                    required
+                    required
+                    minlength="10"
+                    maxlength="100"
+                  />
+                </article>
+                <article class="mb-3">
+                  <label for="consulta" class="col-form-label text-light"
+                    >Consulta:</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="consulta"
+                    required
+                    rows="5"
+                    minlength="20"
+                    maxlength="500"
+                  ></textarea>
+                </article>
+                <article class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn text-light bg-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button type="submit" class="btn text-light rojo">
+                    Enviar!
+                  </button>
+                </article>
+              </form>
+            </section>
+          </div>
+        </article>
+      </section>
+      <!-- modal log in -->
+      <section
+        class="modal fade"
+        id="modallogin"
+        tabindex="-1"
+        aria-labelledby="mlogin"
+        aria-hidden="true"
+      >
+        <article class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="mlogin">inicar sesion</h1>
+              <button
+                type="button"
+                class="btn-close bg-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <section class="modal-body">
+              <form>
+                <article class="mb-3">
+                  <label for="email" class="col-form-label text-light"
+                    >E-mail:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="zzz@mail.com"
+                    id="email"
+                    required
+                    minlength="10"
+                    maxlength="100"
+                  />
+                </article>
+                <article class="mb-3">
+                  <label for="pass" class="col-form-label text-light"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder=""
+                    id="pass"
+                    required
+                    minlength="8"
+                    maxlength="20"
+                  />
+                </article>
+                <article class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button type="submit" class="btn rojo text-light">
+                    Iniciar sesion
+                  </button>
+                </article>
+              </form>
+            </section>
+          </div>
+        </article>
+      </section>
+      <!-- Modal Suscripcion -->
+      <section
+        class="modal fade"
+        id="modalSuscripcion"
+        tabindex="-1"
+        aria-labelledby="modalSuscripcionLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1
+                class="modal-title fs-5 text-center"
+                id="modalSuscripcionLabel"
+              >
+                Ya casi estamos. Confirme ingresando los datos de su tarjeta
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mt-3">
+                  <input
+                    type="number"
+                    placeholder="Numero de tarjeta"
+                    id="tarjeta"
+                    required
+                    minlength="13"
+                    maxlength="18"
+                  />
+                </div>
+                <div class="mt-3">
+                  <label for="vencimiento">Fecha de vencimiento:</label>
+                  <br />
+                  <input
+                    type="date"
+                    id="vencimiento"
+                    required
+                    minlength="8"
+                    maxlength="8"
+                  />
+                </div>
+                <div class="my-4">
+                  <input
+                    type="number"
+                    placeholder="Código de seguridad"
+                    id="codigo"
+                    required
+                    minlength="3"
+                    maxlength="3"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-dark"
+                data-bs-dismiss="modal"
+              >
+                Cancelar
+              </button>
+              <a class="btn btn-danger" href="#" role="button">Enviar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="fondoDelNegro text-light py-4">
+      <section class="container">
+        <article class="row text-secondary">
+          <aside class="col-12 col-md-4 col-lg-4 text-center mb-2">
+            <img src="../img/nefli (4).png" alt="nefli" width="170px" />
+          </aside>
+
+          <aside class="col-12 col-md-4 col-lg-4 mb-2">
+            <h5>Preguntas? Llama al 0800 666 3331</h5>
+            <p class="fs-6">
+              Tambien podes Visitar nuestras redes sociales <br />
+              y descubri muchas cosas nuevas!
+            </p>
+            <div class="d-flex justify-content-around mt-4">
+              <a href="./mantenimiento.html" class="text-secondary fs-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+
+              <a href="./mantenimiento.html" class="text-secondary fs-2 mx-1">
+                <i class="bi bi-twitter"></i
+              ></a>
+
+              <a href="./mantenimiento.html" class="text-secondary fs-2">
+                <i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </aside>
+          <aside class="col-12 col-md-4 col-lg- mb-2">
+            <h5>Por mas consultas</h5>
+            <a
+              href="./acercaDeNosotros.html"
+              class="fw-bold text-danger fs-4"
+              >Acerca de nosotros</a
+            >
+            <p class="my-3">
+              Si tenes dudas especificas dejanosla aqui abajo
+              <spam class="fs-5 text-light">↓</spam>
+            </p>
+            <button
+              type="button"
+              class="btn text-light border-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#idModalBoton"
+              data-bs-whatever="@mdo"
+            >
+              Consultanos!
+            </button>
+          </aside>
+        </article>
+      </section>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
